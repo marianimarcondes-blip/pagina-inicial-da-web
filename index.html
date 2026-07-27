@@ -5,39 +5,12 @@
     <meta name="viewport"
     content="width= device-width, initial scale 1.0">
     <title>minha pagina da web</title>
-    <style>
-        header{ 
-        background-color: blueviolet;
-        color: azure;
-        text-align:center;
-        max width: 800px
-        margin: 0 auto;
-        padding: 16 px;
-        border: 5px solid
-        #cf1010;
-        }
- img {
-    width: 80 px;
-    height: 80px;
- }
- .artigo-autor      {
-    font-weight: bold;
- }
+   <link rel="stylesheet" href="style.css"> 
 
-        main {
-        background-color: #FFFFFF;
-        color: #183c63;
-        max-width: 800px;
-        margin:  0 auto;
-        padding: 16px;
-        }
-        article{
-        display: flex;
-        }
-    </style>
 </head>
-    <body>
-        <header>
+
+<body>
+     <header>
     <h1>meu blog tech </h1>
     <p>vou compartilhar conhecimentos sobre tecnologia e programação</p>]
         </header>
@@ -48,44 +21,33 @@
             <h2>meu primeiro post</h2>
         <p class= "artigo-autor">/p> por: Mariani Marcondes</p>
         <p>boas vindas ao meu novo projeto, aqui irei compartilhar curiosidades e programaçoes.</p>
+        
         <button>💙 ​<span>0</span></button>
         <button>👍​ ​<span>0</span></button>
         </div>
         </article>
         <article>
-            <img src="homem-de-tiro-medio-usando-oculos-vr_23-2149126949.avif" alt="A imagem mostra um homem jovem visto de meio-corpo, utilizando um óculos de realidade virtual (VR) e interagindo com uma interface digital flutuante. O cenário tem uma iluminação estilizada e futurista, dominada por tons vibrantes de neon azul e roxo/rosa.">
+            <img src="copa do mundo.jpeg">
+            <div>
+            <h2> copa do mundo 2026</h2>
+        <p class= "artigo-autor">/p> por: Mariani Marcondes 
+        <p> a copa do mundo este ano foi decepcionante para os brasileiros, pois o Brasil perdeu nas oitavas de final, deixando a Espanha como campeã do mundo.</p>
+        <button>💙 ​<span>0</span></button>
+        <button>👍​ ​<span>0</span></button>
+        </div>
+        </article>
+        <article>
+            <img src="images.jpeg">
                 <div>
-                <h2>meu segundo post</h2>
+                <h2> o primeiro homem a ser lançado para ir ao espaço</h2>
             <p class= "artigo-autor">/p> por: Mariani Marcondes</p>
-            <p>boas vindas ao meu novo projeto, aqui irei compartilhar curiosidades e programaçoes.</p>
+            <p>O primeiro homem a ir ao espaço foi o cosmonauta soviético Yuri Gagarin, em 12 de abril de 1961, a bordo da nave Vostok 1.</p>
             <button>💙​ <span>0</span></button>
             <button>👍​ ​<span>0</span></button>
             </div>
         </article>
     </main>
-       
+    <script src="script.js"></script>
     </body>
-    <script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach( function(botao){
-    let curtiu = false;
-    botao.addEventListener("click", botaoClicado);   
-    function botaoClicado(){
-    console.log("fui clicado");
-    let texto=botao.querySelector("span")
-    if (curtiu === false){
-    texto.textContent++;
-    curtiu= true;
-    } else {
-        texto.textContent--;
-        curtiu=false;
-    }
-
-        }
-    })
-        
-
     
-    </script>
 </html>

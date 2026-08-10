@@ -1,10 +1,19 @@
+:root {
+    --cor-primaria: blueviolet; ;
+    --cor-secundaria: rgb(123, 89, 154);
+    --cor-fundo:rgb(227, 224, 230);
+    --cor-texto:rgb(26, 24, 27);
+    --cor-contraste: rgb(192, 180, 204);
+    --cor-botao: blueviolet; 
+}
+
 body {
     max-width: 100vw;
 }
 
 header{ 
-    background-color: blueviolet;
-    color: azure;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
     text-align:center;
     margin: 0 auto;
     padding: 16 px;
